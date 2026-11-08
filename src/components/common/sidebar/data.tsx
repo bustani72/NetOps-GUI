@@ -1,11 +1,15 @@
 import {
-  AlphabetIcon,
+  AuthIcon,
   HomeIcon,
+  InvoiceIcon,
   PieChartIcon,
+  ServerIcon,
   TableIcon,
+  TaskIcon,
+  UserGroupIcon,
   UserIcon,
   Widget4Icon,
-  WindowIcon
+  WindowIcon,
 } from "./icon";
 
 export const NAV_DATA = [
@@ -14,112 +18,95 @@ export const NAV_DATA = [
     items: [
       {
         title: "Dashboard",
+        url: "/",
         icon: <HomeIcon />,
-        items: [
-          {
-            title: "E-commerce",
-            url: "/",
-          },
-          
-        ],
-      },   
-      {
-        title: "Profile",
-        url: "/profile",
-        icon: <UserIcon />,
         items: [],
       },
       {
-        title: "Forms",
-        icon: <AlphabetIcon />,
-        items: [
-          {
-            title: "Form Elements",
-            url: "/form-elements",
-          },
-        ],
-      },
-      {
-        title: "Tables",
-        url: "/tables",
-        icon: <TableIcon />,
-        items: [
-          {
-            title: "Basic Tables",
-            url: "/tables/basic-tables",
-          },
-        ],
-      },
-      {
-        title: "Pages",
+        title: "VPN Control",
         icon: <WindowIcon />,
         items: [
           {
-            title: "Error Page",
-            url: "/error-page",
+            title: "Services",
+            url: "/vpn/services",
           },
           {
-            title: "Terms & Conditions",
-            url: "/terms-and-conditions",
+            title: "L2TP Users",
+            url: "/vpn/l2tp-users",
           },
           {
-            title: "Mail Success",
-            url: "/mail-success",
+            title: "WireGuard Peers",
+            url: "/vpn/wireguard-peers",
+          },
+          {
+            title: "Port Forwards",
+            url: "/vpn/port-forwards",
           },
         ],
+      },
+      {
+        title: "Daily Tasks",
+        url: "/daily-tasks",
+        icon: <TaskIcon />,
+        items: [],
       },
     ],
   },
   {
-    label: "OTHERS",
+    label: "INFRASTRUCTURE",
     items: [
       {
-        title: "Charts",
-        icon: <PieChartIcon />,
-        items: [
-          {
-            title: "Line Charts",
-            url: "/charts/line-charts",
-          },
-          {
-            title: "Bar Charts",
-            url: "/charts/bar-charts",
-          },
-          {
-            title: "Pie Charts",
-            url: "/charts/pie-charts",
-          },
-        ],
+        title: "POP",
+        url: "/pop",
+        icon: <Widget4Icon />,
+        items: [],
       },
       {
-        title: "UI Elements",
-        icon: <Widget4Icon />,
-        items: [
-          {
-            title: "Accordion",
-            url: "/ui-elements/accordion",
-          },
-          {
-            title: "Avatars",
-            url: "/ui-elements/avatars",
-          },
-          {
-            title: "Buttons",
-            url: "/ui-elements/buttons",
-          },
-          {
-            title: "Breadcrumbs",
-            url: "/ui-elements/breadcrumbs",
-          },
-          {
-            title: "Progress",
-            url: "/ui-elements/progress",
-          },
-          {
-            title: "Tooltips",
-            url: "/ui-elements/tooltips",
-          },
-        ],
+        title: "OTB",
+        url: "/otb",
+        icon: <TableIcon />,
+        items: [],
+      },
+      {
+        title: "Cores",
+        url: "/cores",
+        icon: <PieChartIcon />,
+        items: [],
+      },
+      {
+        title: "Clients",
+        url: "/clients",
+        icon: <UserGroupIcon />,
+        items: [],
+      },
+    ],
+  },
+  {
+    label: "SYSTEM",
+    items: [
+      {
+        title: "Servers",
+        url: "/servers",
+        icon: <ServerIcon />,
+        items: [],
+      },
+      {
+        title: "Users",
+        url: "/users",
+        icon: <UserIcon />,
+        items: [],
+      },
+      {
+        title: "Settings",
+        url: "/settings",
+        icon: <AuthIcon />,
+        items: [],
+      },
+      {
+        title: "Audit Logs",
+        url: "/audit-logs",
+        icon: <InvoiceIcon />,
+        items: [],
       },
     ],
   },

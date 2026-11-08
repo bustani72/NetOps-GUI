@@ -1,34 +1,23 @@
-import InventoryOverview from "./_component/inventory-overview";
-import LastTransactionsTable from "./_component/last-transactions-table";
-import ECommerceOverviewStats from "./_component/overview-stats";
-import RegionLabels from "./_component/region-labels";
-import SalesChart from "./_component/sales-chart";
-import TopProducts from "./_component/top-products";
-import TrafficSources from "./_component/traffic-sources";
+import PageHeader from "@/components/common/page-header";
+import RecentAuditCard from "./_component/recent-audit-card";
+import TaskOverviewCard from "./_component/task-overview-card";
+import VpnOverviewCard from "./_component/vpn-overview-card";
 
 export default function Home() {
   return (
     <div className="mt-6 space-y-5">
-      {/* Header Section */}
-      <div className="px-2 lg:px-6">
-        <h1 className="mb-1 text-[28px] leading-8 font-medium text-text-primary">E-commerce</h1>
-        <p className="text-sm leading-5 text-text-tertiary">
-          Track sales, monitor orders, and analyze store performance.
-        </p>
-      </div>
+      <PageHeader
+        title="Dashboard"
+        description="Ringkasan kontrol VPN Manager dan pekerjaan harian tim operasional."
+      />
 
       <div className="space-y-5 px-2 lg:px-5">
-        <ECommerceOverviewStats />
-        <SalesChart />
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-[519fr_558fr]">
-          <InventoryOverview />
-          <TopProducts />
+        <VpnOverviewCard />
+
+        <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+          <TaskOverviewCard />
+          <RecentAuditCard />
         </div>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-[546fr_531fr]">
-          <TrafficSources />
-          <RegionLabels />
-        </div>
-        <LastTransactionsTable />
       </div>
     </div>
   );

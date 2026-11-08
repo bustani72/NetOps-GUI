@@ -365,3 +365,31 @@ export function AuthIcon() {
     </svg>
   );
 }
+
+export function ServerIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
+      <rect
+        x={1.5}
+        y={2.25}
+        width={15}
+        height={4.5}
+        rx={1.5}
+        stroke="currentColor"
+        strokeWidth={1.5}
+      />
+      <rect
+        x={1.5}
+        y={11.25}
+        width={15}
+        height={4.5}
+        rx={1.5}
+        stroke="currentColor"
+        strokeWidth={1.5}
+      />
+      <path d="M4.5 4.5h.01M4.5 13.5h.01" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" />
+      <path d="M7.5 4.5H13M7.5 13.5H13" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" />
+      <path d="M9 6.75v4.5" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" />
+    </svg>
+  );
+}

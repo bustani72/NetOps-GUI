@@ -1,5 +1,6 @@
 "use client";
 
+import AuthGuard from "@/components/common/auth-guard";
 import Header from "@/components/common/header";
 import Sidebar from "@/components/common/sidebar";
 import { SheetContent, SheetOverlay, SheetTitle } from "@/components/tailgrids/core/sheet";
@@ -15,7 +16,8 @@ export default function WithLayout({ children }: { children: ReactNode }) {
   const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
 
   return (
-    <div className="flex h-full">
+    <AuthGuard>
+      <div className="flex h-full">
       {/*  Desktop sidebar (xl+) — always in DOM, toggles width  */}
       <aside
         style={{
@@ -62,5 +64,6 @@ export default function WithLayout({ children }: { children: ReactNode }) {
         </div>
       </div>
     </div>
+    </AuthGuard>
   );
 }

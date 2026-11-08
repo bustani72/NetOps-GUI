@@ -13,11 +13,11 @@ const geistInter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | NextAdmin - Next.js Dashboard Kit",
-    default: "NextAdmin - Next.js Dashboard Kit",
+    template: "%s | NetOps Portal",
+    default: "NetOps Portal",
   },
   description:
-    "Next.js admin dashboard toolkit with 200+ templates, UI components, and integrations for fast dashboard development.",
+    "NetOps Portal - remote control management dashboard untuk VPN Manager, daily tasks, dan infrastruktur ISP.",
 };
 
 export default function RootLayout({
