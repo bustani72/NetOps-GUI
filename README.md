@@ -67,14 +67,12 @@ Fitur **Servers** (setup server & terminal) hanya untuk role `super_admin`.
 
 ---
 
-## Push ke GitHub (repo ini terpisah)
+## Repositori
 
-```bash
-git remote add origin https://github.com/<user>/netops-portal-gui.git
-git push -u origin main
-```
+Repo ini berdiri sendiri: **https://github.com/bustani72/NetOps-GUI** (branch `main`).
+Remote `upstream` menunjuk ke template asli NextAdmin.
 
-Atau dari folder induk, jalankan `../save-to-github.ps1` (menyimpan kedua repo).
+Atau dari folder induk, jalankan `../save-to-github.ps1` (menyimpan kedua repo sekaligus).
 
 ---
 
