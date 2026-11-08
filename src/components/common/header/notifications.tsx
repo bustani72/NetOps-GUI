@@ -136,7 +136,7 @@ export function NotificationsButton() {
 
           <Link
             className="p-1 text-icon-secondary transition-colors hover:text-icon-primary"
-            href="/profile/notification"
+            href="/settings"
             onClick={() => setIsOpen(false)}
           >
             <SettingIcon />

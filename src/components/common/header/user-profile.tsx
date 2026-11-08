@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  GearIcon,
-  LogoutIcon,
-  UserCircleIcon,
-} from "@/components/common/header/icons";
+import { GearIcon, LogoutIcon } from "@/components/common/header/icons";
 import { Avatar, AvatarFallback } from "@/components/tailgrids/core/avatar";
 import {
   DropdownMenu,
@@ -40,11 +36,6 @@ export function UserProfileButton() {
   const initial = displayName.charAt(0).toUpperCase();
 
   const menuItems: UserProfileMenuItem[] = [
-    {
-      href: "/profile",
-      icon: <UserCircleIcon />,
-      label: "View profile",
-    },
     {
       href: "/settings",
       icon: <GearIcon />,
